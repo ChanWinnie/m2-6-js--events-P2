@@ -85,8 +85,19 @@ const staffMembers = [
   },
 ];
 
+//use filter, to reduce to smaller rray which will contain our results
 const getData = (arr, key, val) => {
-  // return something
+  
+let newArr = arr.filter(person => {
+    if(typeof val === "string"){
+      if (person[key] === val) return true
+      else return false
+    } else if (typeof val === "number") {
+      if(person.skillLevels[key] >= val) return true
+      else return false
+    }
+});
+  return newArr;
 };
 
 // 2. Do a console.log to verify your function.
