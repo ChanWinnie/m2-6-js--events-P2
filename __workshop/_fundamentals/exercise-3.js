@@ -18,8 +18,15 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-  // return something
-}
+//word.name.middle !== undefined
+  return peopleArr.map((word) => {
+    if(word.name.hasOwnProperty("middle")){
+       return  `${word.name.first} ${word.name.middle} ${word.name.last}`;
+    } else {
+       return `${word.name.first} ${word.name.last}`;
+    }
+  }) 
+};
 
 // 2. Do a console.log to verify your function.
 
