@@ -1,1 +1,105 @@
 /* add css here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Jost";
+  }
+
+:root {
+    --margin-top: 25px;
+    --font-weight: bold;
+    --main-padding: 10px 40px;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-weight: var(--font-weight); 
+    font-size: 35px;
+    text-align: center;
+}
+
+.input-box, .terms-box, .error-message {
+    font-size: 12px;
+    font-weight: var(--font-weight); 
+}
+
+.wrapper {
+    margin: 32px auto;
+    width: 410px;
+    border: solid 1px #f2f2f2;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    padding: 24px;
+    background-color: white;
+}
+
+.actual-form {
+    margin-top: var(--margin-top);   
+}
+
+.input-box {
+    text-align: right;
+    padding: 5px 0;
+}
+
+.btn-style-clear {
+    padding: var(--main-padding); 
+    font-size: 15px;
+    color: white;
+    background-color: hsl(333deg, 100%, 44%);
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-style-submit {
+    padding: var(--main-padding); 
+    font-size: 15px;
+    color: white;
+    background-color: hsl(256deg, 100%, 44%);
+    border-radius: 4px;
+    outline: none;
+}
+
+.both-buttons {
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--font-weight); 
+    margin-top: var(--margin-top);   
+}
+
+.input-style {
+    border: solid 2px #f2f2f2;
+    border-radius: 5px;
+    width: 60%;
+    padding: 2px 0;
+}
+
+.input-style:focus{
+    outline-color:rgb(63, 97, 252);
+}
+
+.terms-box {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    padding: var(--main-padding); 
+    margin-top: var(--margin-top);   
+}
+
+.error-message {
+    background-color: hsla(333deg, 100%, 44%, 0.25);
+    text-align: center;
+    font-weight: var(--font-weight); 
+    border-radius: 5px;
+    padding: var(--main-padding); 
+    margin-top: var(--margin-top);   
+}
+

@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link
+    href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+    rel="stylesheet"/>
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form class="actual-form" id="actual-form"> 
+        <div class="input-box">
+          <label>Full name:</label>
+          <input type="text" class="input-style" id="full-name-input" required>
+        </div>
+        <div class="input-box">
+          <label for="stret-address-input">Street address:</label>
+          <input  type="text" class="input-style" id="stret-address-input" value="" required>
+        </div>
+        <div class="input-box">
+          <label for="email-address-input">Email address:</label>
+          <input  type="email" class="input-style" id="email-address-input" value="" required>
+        </div>
+        <div class="input-box">
+          <label for="phone-number-input">Phone number:</label>
+          <input  type="text" class="input-style" id="phone-number-input" value="" required>
+        </div>
+        <div class="input-box">
+          <label for="password-input">Password:</label>
+          <input  type="password" class="input-style" id="password-input" value="" required>
+        </div>
+        <div class="input-box">
+          <label for="confirm-password-input">Confirm Password:</label>
+          <input  type="password" class="input-style" id ="confirm-password-input" value ="" required>
+        </div>
+        <div class="terms-box">
+          <input type="checkbox" id="terms-services-input">
+          <label for="terms-services-input"> I agree to the <a href="#">terms of service</a>. </label>
+        </div>
+        <div id="error-message"></div>
+        <footer class="both-buttons">
+          <button type="reset" class="btn-style-clear">Clear</button>
+          <button type="submit" class="btn-style-submit">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
